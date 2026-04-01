@@ -150,78 +150,10 @@ Merge these three quarterly reports into one PDF
 and extract a summary table of the key financial figures
 ```
 
----
-
-# Creating a Basic Skill
-
-Skills are simple to create — just a folder with a `SKILL.md` file containing YAML frontmatter and instructions:
-
-```markdown
----
-name: my-skill-name
-description: A clear description of what this skill does and when to use it
----
-
-# My Skill Name
-
-[Add your instructions here that Claude will follow when this skill is active]
-
-## Examples
-- Example usage 1
-- Example usage 2
-
-## Guidelines
-- Guideline 1
-- Guideline 2
-```
-
-The frontmatter requires only two fields:
-
-- `name` — A unique identifier for your skill (lowercase, hyphens for spaces)
-- `description` — A complete description of what the skill does and when to use it
-
-The markdown content below the frontmatter contains the instructions, examples, and guidelines that Claude will follow. For more details, see [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills).
-
----
-
-# Plugin Marketplace — `marketplace.json`
-
-This repository is registered as a Claude Code Plugin marketplace via `.claude-plugin/marketplace.json`. All 5 skills are bundled under the `document-skills` plugin group.
-
-```json
-{
-  "name": "anthropic-agent-skills",
-  "owner": {
-    "name": "DigiCovAI",
-    "email": "digicovai@gmail.com"
-  },
-  "metadata": {
-    "description": "Anthropic example skills",
-    "version": "1.0.0"
-  },
-  "plugins": [
-    {
-      "name": "document-skills",
-      "description": "Presentation decks, websites, LinkedIn posts, meeting insights, and PDF tools",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./pptx",
-        "./frontend-design",
-        "./linkedin",
-        "./meeting-insights-analyzer",
-        "./pdf"
-      ]
-    }
-  ]
-}
-```
-
----
 
 # About DigiCovAI
 
 **DigiCovAI** builds Claude skills and AI-powered workflows to help businesses automate high-value, repetitive tasks.
 
-- 📧 [digicovai@gmail.com](mailto:digicovai@gmail.com)
-- 🐙 [github.com/digicovai](https://github.com/digicovai)
+- [digicovai@gmail.com](mailto:digicovai@gmail.com)
+- [github.com/digicovai](https://github.com/digicovai)
