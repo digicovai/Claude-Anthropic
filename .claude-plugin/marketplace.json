@@ -1,0 +1,26 @@
+{
+  "name": "anthropic-agent-skills",
+  "owner": {
+    "name": "DigiCovAI",
+    "email": "digicovai@gmail.com"
+  },
+  "metadata": {
+    "description": "Anthropic example skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "document-skills",
+      "description": "Collection of document processing suite including PowerPoint, Frontend Design, LinkedIn, Meeting Insights, and PDF capabilities",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./pptx",
+        "./frontend-design",
+        "./linkedin",
+        "./meeting-insights-analyzer",
+        "./pdf"
+      ]
+    }
+  ]
+}
